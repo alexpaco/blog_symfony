@@ -1,0 +1,14 @@
+Byme\BlogBundle\Entity\Categories:
+    type: entity
+    table: categories
+    repositoryClass: Byme\BlogBundle\Repository\CategoriesRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255

@@ -1,0 +1,17 @@
+Byme\BlogBundle\Entity\Images:
+    type: entity
+    table: images
+    repositoryClass: Byme\BlogBundle\Repository\ImagesRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+        alt:
+            type: string
+            length: 255

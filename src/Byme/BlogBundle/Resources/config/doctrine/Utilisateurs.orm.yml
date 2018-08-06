@@ -1,0 +1,25 @@
+Byme\BlogBundle\Entity\Utilisateurs:
+    type: entity
+    table: utilisateurs
+    repositoryClass: Byme\BlogBundle\Repository\UtilisateursRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+            unique: true
+        motDePasse:
+            type: string
+            length: 255
+            column: mot_de_passe
+    manyToOne:
+        role:
+            targetEntity: Byme\BlogBundle\Entity\role
+            joinColumn:
+                name: role_id
+                referenceColumnName: id

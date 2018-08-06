@@ -1,0 +1,37 @@
+Byme\BlogBundle\Entity\Articles:
+    type: entity
+    table: articles
+    repositoryClass: Byme\BlogBundle\Repository\ArticlesRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        contenu:
+            type: string
+            length: 255
+        titre:
+            type: string
+            length: 255
+        date:
+            type: datetime
+    manyToOne:
+        images:
+            targetEntity: Byme\BlogBundle\Entity\Images
+            joinColumn:
+                name: image_id
+                referenceColumnName: id
+    manyToMany:
+        categories:
+            targetEntity: Byme\BlogBundle\Entity\Categories
+            joinTable:
+                name: categoriesToArticle
+                joinColumn:
+                    article_id:
+                        referenceColumnName: id
+                inverseJoinColumn:
+                    categorie_id:
+                        referenceColumnName: id
+
