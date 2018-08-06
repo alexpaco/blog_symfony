@@ -1,0 +1,3 @@
+byme_blog_homepage:
+    path:     /
+    defaults: { _controller: BymeBlogBundle:Default:index }

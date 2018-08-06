@@ -1,6 +1,6 @@
 <?php
 
-namespace BlogBundle\Controller;
+namespace Byme\BlogBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -8,6 +8,6 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('@Blog/Default/index.html.twig');
+        return $this->render('@BymeBlog/Default/index.html.twig');
     }
 }

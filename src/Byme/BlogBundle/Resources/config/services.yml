@@ -1,4 +1,4 @@
 services:
-#    blog.example:
-#        class: BlogBundle\Example
+#    byme_blog.example:
+#        class: Byme\BlogBundle\Example
 #        arguments: ["@service_id", "plain_value", "%parameter%"]
