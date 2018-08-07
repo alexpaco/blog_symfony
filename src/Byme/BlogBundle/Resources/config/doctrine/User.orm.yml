@@ -1,0 +1,9 @@
+Byme\BlogBundle\Entity\User:
+    type: entity
+    table: user
+    repositoryClass: Byme\BlogBundle\Repository\UserRepository
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
