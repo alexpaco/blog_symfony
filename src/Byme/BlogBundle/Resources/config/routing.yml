@@ -1,3 +1,24 @@
 byme_blog_homepage:
     path:     /
     defaults: { _controller: BymeBlogBundle:Default:index }
+byme_blog_article:
+    path:     /article/{id}
+    defaults: { _controller: BymeBlogBundle:Article:one }
+byme_blog_admin:
+    path:     /admin
+    defaults: { _controller: BymeBlogBundle:Admin:home }
+byme_blog_admin_delete:
+    path:     /admin/delete/{id}
+    defaults: { _controller: BymeBlogBundle:Admin:delete }
+byme_blog_auteur:
+    path:     /auteur/{id}
+    defaults: { _controller: BymeBlogBundle:Auteur:home }
+byme_blog_auteur_add:
+    path:     /auteur/add
+    defaults: {  _controller: BymeBlogBundle:Auteur:add }
+byme_blog_auteur_modified:
+    path:     /auteur/modified/{id}
+    defaults: { _controller: BymeBlogBundle:Auteur:modified }
+byme_blog_auteur_delete:
+    path:     /auteur/delete/{id}
+    defaults: { _controller: BymeBlogBundle:Auteur:delete }
